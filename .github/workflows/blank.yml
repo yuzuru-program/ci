@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: スクレイピング
         run: |
-          git clone https://github.com/yuzuru-program/scraping-node-yahoo.git ci
+          git clone https://github.com/yuzuru-program/scraping-python-yahoo.git ci
           cd ci
-          npm i
-          node index
+          pip3 install requests beautifulsoup4
+          python3 index.py
